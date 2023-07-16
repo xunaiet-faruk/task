@@ -6,6 +6,7 @@ padding: 40px 120px;
 }
 
 
+
 nav{
 
 display: flex;
@@ -32,6 +33,20 @@ nav a{
     font-size: 18px;
     font-weight: 500;
 }
+
+.btn{
+
+    background-color: orange;
+padding: 15px;
+border-radius: 8px;
+border: none;
+margin-bottom: 15px;
+font-weight: 500;
+font-size: 1.1rem;
+color: aliceblue;
+
+}
+
 
 .nav-head{
 
@@ -68,4 +83,67 @@ nav a{
     text-align: center;
     font-weight: 400;
 
+}
+
+main{
+
+    max-width:1440px;
+    margin:50px auto;
+    
+}
+
+.team-container{
+
+    display: flex;
+    align-items: center;
+}
+
+.team-image{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem;
+    margin-right: 70px;
+    margin-bottom: 70px;
+
+}
+
+.team-image img{
+
+    margin-left: 50px;
+    margin-right: -40px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+
+    nav{
+
+        flex-direction: column;
+    }
+
+    header{
+
+        padding:10px 10px;
+    }
+    
+        .team-image{
+
+            flex-direction: column;
+        }
+
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:970px){
+
+
+    
 }
